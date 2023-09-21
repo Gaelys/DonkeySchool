@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8" />
         <title>Mon Portfolio</title>
+        <meta name="description" content="My first Portfolio">
     </head>
     <body>
         <h1>Lorem ipsum</h1>
         <figure>
-            <img src="https://placehold.co/600x400" alt"Lorem ipsus" /><br />
+            <img src="https://placehold.co/600x400" title="Lorem" alt="Lorem ipsus" /><br />
             <figcaption>Lorem ipsus</figcaption>
         </figure>
         <nav>
@@ -21,7 +22,7 @@
         </nav>
         <h2>Lorem ipsus</h2>
         <section>
-            <img src="https://placehold.co/600x400" alt"Lorem ipsus" /><br />
+            <img src="https://placehold.co/600x400" title="Lorem" alt="Lorem ipsus" /><br />
             <article>
                 <h3>Lorem ipsus</h3>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus omnis perspiciatis aut, sequi animi, nostrum modi placeat, cum repellat culpa sint tenetur officia alias? Saepe nulla ducimus ratione assumenda aperiam?
@@ -29,7 +30,7 @@
             <button>En savoir plus</button>
         </section>
         <section>
-            <img src="https://placehold.co/600x400" alt"Lorem ipsus" /><br />
+            <img src="https://placehold.co/600x400" title="Lorem" alt="Lorem ipsus" /><br />
             <article>
                 <h3>Lorem ipsus</h3>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus omnis perspiciatis aut, sequi animi, nostrum modi placeat, cum repellat culpa sint tenetur officia alias? Saepe nulla ducimus ratione assumenda aperiam?
@@ -38,10 +39,10 @@
         </section>
         <h2>Lorem ipsus</h2>
         <section>
-            <img src="https://placehold.co/600x400" alt"Lorem ipsus" /><br />
+            <img src="https://placehold.co/600x400" title="Lorem" alt="Lorem ipsus" /><br />
             <aside>
                 Lorem ipsus 
-                <a href="mailto:lorem">Send email</a>
+                <a href="mailto:lorem" title="Contact me">Send email</a>
             </aside>
         </section>
         <section>
@@ -62,7 +63,7 @@
         <section>
             <article>
                 <h3>Lorem</h3>
-                <img src="https://placehold.co/600x400" alt"Lorem ipsus" />
+                <img src="https://placehold.co/600x400" title="Lorem" alt="Lorem ipsus" />
                 <div>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi placeat sapiente numquam quaerat consequatur possimus consequuntur error veritatis saepe totam minus eum doloribus veniam magnam velit perferendis, necessitatibus quibusdam natus.
                 </div>
@@ -70,7 +71,7 @@
             </article>
             <article>
                 <h3>Lorem</h3>
-                <img src="https://placehold.co/600x400" alt"Lorem ipsus" />
+                <img src="https://placehold.co/600x400" title="Lorem" alt="Lorem ipsus" />
                 <div>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi placeat sapiente numquam quaerat consequatur possimus consequuntur error veritatis saepe totam minus eum doloribus veniam magnam velit perferendis, necessitatibus quibusdam natus.
                 </div>
@@ -78,18 +79,31 @@
             </article>
         </section>
         <h2>Lorem</h2>
-        <form>
-            <h3>Lorem</h3>
-            <input type="text" placeholder="Lorem" />
-            <br />
-            <h3>Lorem</h3>
-            <input type="text" placeholder="Lorem" />
-            <h3>Lorem</h3>
-            <input type="text" placeholder="Lorem" />
-            <button>Lorem</button>
+        <form action="lorem" method="lorem">
+            <fieldset>
+                <legend>Lorem</legend>
+                <p>
+                    <label for="name">Lorem</label>
+                    <input type="text" id="name" placeholder="Lorem" name="user-name"/>
+                </p>
+                <p>
+                <label for="email">Lorem</label>
+                <input type="email" id="email" placeholder="Lorem" name="user-email"/>
+                </p>
+                <p>
+                    <label for="msg">Lorem</label>
+                    <textarea type="text" id="msg" placeholder="Lorem" name="user-msg">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod accusamus harum vel, sequi doloremque incidunt distinctio earum mollitia quos tempore quisquam nesciunt totam ratione corrupti fugiat! Debitis, veniam! Ab, quas?
+                    </textarea>
+                </p>
+                <p>
+                    <button type="submit">Lorem</button>
+                </p>
+            </fieldset>
         </form>
         <footer>
             Lorem
+            <a href="Lorem" title="linkedin">linkedin</a>
         </footer>
     </body>
 </html>
