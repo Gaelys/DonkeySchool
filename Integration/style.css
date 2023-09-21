@@ -1,9 +1,33 @@
+
+*{
+    background-color: lightyellow;
+}
+
+h1{
+    text-align: center;
+    background-color: lightsalmon;
+    color: blanchedalmond;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 21px;
+    border: 1rem solid; 
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25%;
+}
+
+figure{
+    text-align: center;
+}
+
 img:hover{
     opacity: 0.3;
 }
 
 img{
     border-radius: 3px;
+    width: 200px;
+    heighT: 250px;
 }
 
 img:first-child{
@@ -17,9 +41,10 @@ nav ul{
 .dropbtn{
     background-color: purple;
     color: white;
-    padding: 16px;
+    padding: 32px;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
     border: none;
 }
 
@@ -50,4 +75,133 @@ nav ul{
 
 .dropdown-content a:hover{
     background-color: #ddd;
+}
+
+h2{
+    text-decoration: underline double orange;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 50px;
+    font-size: 20px;
+    clear: both;
+}
+
+h3{
+    text-decoration: underline;
+    font-size: 15px; 
+    clear: both;
+}
+
+article img{
+    float: left;
+    margin-left: 5px;
+}
+
+article{
+    text-align: justify;
+}
+
+section button{
+    margin-left: 1px;
+}
+
+.infos img{
+    float: left;
+}
+
+.infos div{
+    margin-left: 200px;
+    border: dotted;
+    line-height: 3em;
+}
+
+.year div{
+    margin-left: 2em;
+    margin-right: 1em;
+    text-align: justify;
+}
+
+.A1 img{
+    float: right ;
+
+}
+
+.A1{
+    text-align: justify;
+}
+
+.A2{
+    text-align: justify;
+}
+
+
+footer{
+    text-align: center;
+}
+/* Mobile Styles */
+@media screen and (max-width: 600px){
+   
+}    
+
+/* Tablet Styles */
+@media screen and (min-width: 601px) and (max-width: 960px) {
+    *{
+    background-color: orange;
+    }
+
+    img:first-child{
+        width: 150px;
+        height:150px;
+    }
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 961px){
+    *{
+    background-color: lightblue;
+    }
+    
+    img{
+        width: auto;
+        height: auto;
+    }
+
+    article{
+        text-align: justify;
+    }
+
+    .left{
+        margin-left: 0px;
+    }
+    article div{
+        text-align: justify;
+        margin-top: 6em;
+        margin-left: 20em;
+    }
+    section button{
+        margin-left: 50em;
+    }
+    .infos div{
+        margin-left: 350px;
+        margin-right: 350px;
+        border: dotted;
+        line-height: 3em;
+    }
+
+    .A1 .left{
+        margin-right: 700px;
+    }
+
+    .A2 .right{
+        margin-left: 700px;
+    }
+
+    .A1 button{
+        margin-left: 0em;
+    }
+
+    .A2 button{
+    margin-left: 7em;
+    }
+
 }
