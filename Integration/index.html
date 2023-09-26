@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="styles.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
-    <body>
+    <body>  
         <header>
             <nav class="nav">
                 <ul class="menu">
@@ -16,7 +16,7 @@
                             <li class="content"><a href="#projets"  title="Projets">Projets</a></li>
                             <li class="content"><a href="#Etudes" title="Etudes">Etudes</a></li>
                             <li class="content"><a href="#Articles" title="Articles">Articles</a></li>
-                            <li class="content"><a href="#Contacts" title="Contacts">Contacts</a></li>
+                         <li class="content"><a href="#Contacts" title="Contacts">Contacts</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -44,7 +44,7 @@
             </section>
             <section class="article">
                 <article class="box">
-                    <img src="https://placehold.co/300x350/purple/white" title="Lorem" alt="Lorem ipsus" />
+                    <img src="https://placehold.co/300x350/purple/white" title="Lorem" alt="Lorem ipsus" /><br />
                 </article>
                 <article class="box">
                     <h3>Projets 2:</h3>
@@ -52,17 +52,27 @@
                     <button class="white">En savoir plus</button>
                 </article>  
             </section>
+            <section class="article">
+                <article class="box">
+                    <img src="https://placehold.co/300x350/salmon/white" title="Lorem" alt="Lorem ipsus" /><br />
+                </article>
+                <article class="box">
+                    <h3>Projets 3:</h3>                        
+                    <div class="flow">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus omnis perspiciatis aut, sequi animi, nostrum modi placeat, cum repellat culpa sint tenetur officia alias? Saepe nulla ducimus ratione assumenda aperiam?</div>
+                    <button class="white">En savoir plus</button>
+                </article>
+            </section>
             </div>
             <h2  id="Etudes">Etudes</h2>
             <section class="article infos">
                 <h3>Présentations:</h3>
                 <img src="https://placehold.co/300x400/red/white" title="Lorem" alt="Lorem ipsus" />
                 <div>
-                    Gaertner<br />
-                    Charlotte<br />
-                    30 ans<br/>
-                    <a href="mailto:lorem" title="Contact me">Send email</a><br />
-                    0674419411
+                    <p>Nom</p>
+                    <p>Prénom</p>
+                    <p>30 ans</p>
+                    <p><a href="mailto:lorem" title="Contact me">Send email</a></p>
+                    <p>Téléphone</p>
                 </div>
             </section>
             <section class="box date">
@@ -81,7 +91,7 @@
             </section>
             <h2 id="Articles">Articles</h2>
             <section class="wrap">
-                <h3>Articles 1:</h3>
+                <h3 class="separate">Articles 1:</h3>
                 <article class="article">
                     <div class="box">
                         <img src="https://placehold.co/250x250/blue/white" title="Lorem" alt="Lorem ipsus" />
@@ -92,7 +102,18 @@
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique quo eligendi culpa voluptatem quisquam recusandae totam fugit adipisci? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, vero fuga quo dolorem quia atque? Itaque est porro nulla dolores ab, sapiente id hic eius sit esse nam voluptatibus aliquam.
                     </div>
                 </article>
-            <h3>Articles 2:</h3>
+                <h3 class="separate">Articles 2:</h3>
+                <article class="article">
+                    <div class="box">
+                        <img src="https://placehold.co/250x250/green/white" title="Lorem" alt="Lorem ipsus" />
+                        <button>Lire</button>
+                        <button>Commentaires</button>
+                    </div>
+                    <div class="box flow">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat doloribus praesentium, ratione perferendis quibusdam repellat? Aperiam consequatur ipsum reprehenderit deserunt eius dignissimos ducimus optio laborum, in harum, ullam error nesciunt! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi placeat sapiente numquam quaerat consequatur possimus consequuntur error veritatis saepe totam minus eum doloribus veniam magnam velit perferendis, necessitatibus quibusdam natus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, minus pariatur! Dolores, laborum, minus deleniti quos vero accusamus perspiciatis id molestias ex culpa laudantium eius exercitationem, nobis eveniet modi ipsa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora laborum distinctio enim nobis, amet neque rerum consequatur corrupti saepe sequi non sit esse adipisci a voluptatibus. Totam, placeat amet!
+                    </div>
+                </article>
+                <h3 class="separate">Articles 3:</h3>
                 <article class="article">
                     <div class="box">
                         <img src="https://placehold.co/250x250/green/white" title="Lorem" alt="Lorem ipsus" />
@@ -107,7 +128,7 @@
         <hr>
             <h2 id="Contacts">Contacts</h2>
             <form class="box" action="lorem" method="post" >
-                <fieldset class="box">
+                <fieldset class="box large">
                     <legend>Contactez-moi</legend>
                     <p class="contact">
                         <label for="name">Nom Prénom</label><br />

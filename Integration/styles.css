@@ -1,15 +1,15 @@
-
 *{
     background-color: #C0A9BD;
     font-size: 16px;
+    margin: 0;
 }
-
 
 nav{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     background-color: #94A7AE;
+    width: 100%;
 } 
 
 ul li{
@@ -92,25 +92,26 @@ h1{
     font-family:'Courier New', Courier, monospace;
     font-size: 21px;
     border: 1rem solid; 
-    width: 200px;
+    width: 10em;
     border-radius: 25%;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
-
 
 img:hover{
     opacity: 0.3;
 }
 
-
 img{
     border-radius: 3px;
-    width: 150px;
-    heighT: 150px;
+    width: 10em;
+    heighT: 10em;
 }
 
 .whoin img{
-    width: 150px;
-    height: 150px;
+    width: 15em;
+    height: 15em;
 }
 
 .whoin{
@@ -128,6 +129,7 @@ img{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 figure{
@@ -141,6 +143,7 @@ figure{
 .article{
     display: flex;
     flex-direction: row;
+    margin-bottom: 3em;
 }
 
 .infos{
@@ -150,12 +153,16 @@ figure{
 
 h3{
 text-align: right;
+font-size: 18px;
+font-weight: bold;
 }
 
+.separate{
+    margin-bottom: 5%;
+}
 .flow{
-    width: 15em;
     height: 15em;
-    overflow: scroll;
+    overflow: auto;
 }
 
 .contact{
@@ -164,7 +171,7 @@ text-align: right;
 
 textarea{
     width: 100%;
-    height: 150px;
+    height: 10em;
 }
 
 .submit{
@@ -187,7 +194,11 @@ h2{
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     clear: both;
-    text-align: center;
+    text-align: center;  
+    margin-top: 5%;
+    margin-bottom: 3em;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 h3{
@@ -217,22 +228,26 @@ footer li, footer a, footer ul{
     margin: 0;
     padding: 0;
 }
+
 button{
     margin-left: auto;
     margin-right: auto;
+    height: 3em;
 }
 
+.large{
+    width: 80%;
+}
 
-
-/* Mobile Styles */
-@media screen and (max-width: 600px){
-   
-}    
+input{
+    height: 2em;
+}
 
 /* Tablet Styles */
-@media screen and (min-width: 601px) and (max-width: 960px) {
+@media only screen and (min-width: 601px) and (max-width: 960px) {
     *{
     background-color: #FFBB98;
+    font-size: 20px;
     }
 
     nav{
@@ -248,7 +263,7 @@ button{
     }
     
 
-    footer, footer a, footer div{
+    footer, footer li, footer a, footer ul{
         color: white;
         background-color: #344648;
     }
@@ -256,63 +271,125 @@ button{
     .wrap{
         display: flex;
         flex-direction: row;
+        justify-content: center;
+    }
+
+    .article{
+        flex-direction: column;
+        width: 45%;
+        flex-wrap: wrap;
     }
 
     .flow{
-        width: 270px;
-        height: 125px;
+        height: 10em;
+    }
+
+    .infos{
+        align-items: center;
+        width: 100%;
     }
 
     .infos img{
-        width: 200px;
-        height: 200px;
+        float: left;
+        height: 20em;
+        width: 20em;
+    }
+
+    .infos div{
+        display: flex;
+        align-items: space-evenly;
+    }
+
+    .infos div p{
+        width: 6em;
+        text-align: center;
+    }
+
+    .wrap h3{
+        text-align: center;
+
+        
     }
 
 }
 
 
 /* Desktop Styles */
-@media screen and (min-width: 961px){
+@media only screen and (min-width: 961px){
     *{
     background-color: #E59A59;
-    font-size: 20px;
+    font-size: 23px; 
     }
+
+    h1{
+        margin-top: 5em;
+        margin-bottom: 5em;
+    }
+
     
-    .box{
-        display: flex;
-    }
-   
-    .box1{
-        display: flex;
-
+    .flow{
+        height: 10em;
+        width: 80%;
     }
 
-    .box3{
+    .whoin{
+        height: 25em;
+    }
+
+    .whoin img{
+        width: 24em;
+        height: 24em ;
+    }
+
+    .wrap{
         display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .article{
         flex-direction: column;
+        width: 45%;
+        flex-wrap: wrap;
     }
 
-    .whoin image{
-        width: 150px;
-        height: 150px;
+    .img{
+        width: 75%;
+        height: 50%;
+        float: right;
     }
+
+
 
     .infos{
-        justify-content: space-around;
+        align-items: center;
+        width: 100%;
     }
 
-    .box5{
-        align-items: space-between;
+    .infos img{
+        float: left;
+        height: 20em;
+        width: 20em;
     }
 
-    input{
-        margin-right: auto;
+    .infos div{
+        display: flex;
+        align-items: space-evenly;
     }
+
+    .infos div p{
+        width: 6em;
+        text-align: center;
+    }
+
+    .wrap h3{
+        text-align: center;
+    }
+
     
-    textarea{
-        height: 10em;
+    h3{
+        width: 5em;
     }
-
     nav{
         background-color: #712E1E;
     }
@@ -326,8 +403,9 @@ button{
     }
     
 
-    footer, footer a, footer div{
+    footer, footer li, footer a, footer ul{
         color: white;
         background-color: #712E1E;
     }
+
 }
