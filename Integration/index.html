@@ -1,119 +1,71 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Mon Portfolio</title>
-        <meta name="description" content="My first Portfolio">
-        <link rel="stylesheet" href="style.css" />
+        <title>FindThePrecious.com</title>
+        <meta name="description" content="FindThePrecious.com">
+        <link rel="stylesheet" href="styles.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
-    <body>
-        <h1>Mon Portfolio</h1>
-        <figure>
-            <img src="https://placehold.co/150x150/blue/orange" title="Lorem" alt="Lorem ipsus" /><br />
-            <figcaption>Charlotte</figcaption>
-        </figure>
-        <nav class="dropdown">
-            <button class="dropbtn">Menu</button>
-            <div class="dropdown-content">
-                <a href="#projets" title="Projets">Projets</a>
-                <a href="#Etudes" title="Etudes">Etudes</a>
-                <a href="#Articles" title="Articles">Articles</a>
-                <a href="#Contacts" title="Contacts">Contacts</a>
-            </div>
-        </nav>
-        <br />
-        <h2 id="projets">Projets Réalisés</h2>
-        <section>
-            <article>
-                <h3>Projets 1:</h3>
-                <img src="https://placehold.co/300x350/orange/white" title="Lorem" alt="Lorem ipsus" /><br />
-                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus omnis perspiciatis aut, sequi animi, nostrum modi placeat, cum repellat culpa sint tenetur officia alias? Saepe nulla ducimus ratione assumenda aperiam?</div>
-            </article>
-            <button>En savoir plus</button>
-        </section>
-        <section>
-            <article>
-                <h3>Projets 2:</h3>
-                <img src="https://placehold.co/300x350/purple/white" title="Lorem" alt="Lorem ipsus" /><br />
-                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus omnis perspiciatis aut, sequi animi, nostrum modi placeat, cum repellat culpa sint tenetur officia alias? Saepe nulla ducimus ratione assumenda aperiam?</div>
-            </article>
-            <button>En savoir plus</button>
-        </section>
-        <h2  id="Etudes">Etudes</h2>
-        <section class="infos">
-            <h3>Présentations:</h3>
-            <img src="https://placehold.co/300x400/red/white" title="Lorem" alt="Lorem ipsus" />
-            <div >
-                Gaertner<br />
-                Charlotte<br />
-                30 ans<br/>
-                <a href="mailto:lorem" title="Contact me">Send email</a><br />
-                numéro de téléphone
-            </div>
-            <br />
-        </section>
-        <section class="year">
-            <h3>Date</h3>
-            <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsum sunt qui minima autem nulla. Quibusdam amet possimus enim asperiores nam, debitis sint a minima ducimus, voluptate incidunt consequatur maxime!
-            </div>
-            <h3>Date</h3>
-            <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci consequuntur suscipit ratione? Cupiditate, reiciendis deserunt repudiandae fugit earum doloribus doloremque ducimus mollitia. Blanditiis voluptas ab laudantium eum quos, magnam aliquam?
-            </div>
-            <h3>Date</h3>
-            <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci consequuntur suscipit ratione? Cupiditate, reiciendis deserunt repudiandae fugit earum doloribus doloremque ducimus mollitia. Blanditiis voluptas ab laudantium eum quos, magnam aliquam?
-            </div>
-        </section>
-        <h2  id="Articles">Articles</h2>
-        <section>
-            <article class="A1">
-                <h3>Articles 1:</h3>
-                <img src="https://placehold.co/600x400/blue/white" title="Lorem" alt="Lorem ipsus" />
-                <div class="left">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi placeat sapiente numquam quaerat consequatur possimus consequuntur error veritatis saepe totam minus eum doloribus veniam magnam velit perferendis, necessitatibus quibusdam natus.
-                </div>
-                <button>Lire</button><br />
-                <button>Commentaires</button>
-            </article>
-            <article class="A2">
-                <h3>Articles 2:</h3>
-                <img src="https://placehold.co/600x400/green/white" title="Lorem" alt="Lorem ipsus" />
-                <div class="right">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi placeat sapiente numquam quaerat consequatur possimus consequuntur error veritatis saepe totam minus eum doloribus veniam magnam velit perferendis, necessitatibus quibusdam natus.
-                </div>
-                <button>Lire</button><br />
-                <button>Commentaires</button>
-            </article>
-        </section>
-        <h2  id="Contacts">Contacts</h2>
-        <form action="lorem" method="lorem">
-            <fieldset>
-                <legend>Contactez-moi</legend>
+    <body>  
+        <header>
+            <nav class="nav">
+                <ul class="menu">
+                    <li class="haschildren">FindThePrecious.com</li>
+                    <li class="haschildren">Fellows</li>
+                    <li class="haschildren">Contact us</li>
+                </ul>
+            </nav>
+        </header>
+        <div>
+            <img src="images/grey.jpg" alt="background" />
+        </div>
+        <h1>Fellows wanted dead <span>(or alive if you want to eat them later)</span></h1>
+        <div class="align">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <hr />
+        <h2 id="contacts">Contact us</h2>
+        <form action="contact-form" method="post" >
+            <fieldset class="foot">
                 <p>
-                    <label for="name">Nom Prénom</label>
-                    <input type="text" id="name" placeholder="Lorem" name="user-name"/>
+                    <label for="name"></label><br />
+                    <input class="contact" type="text" id="name" name="user-name" />
+                </p>
+                <p >
+                    <label for="email"></label><br />
+                    <input class="contact" type="email" id="email" name="user-email"/>
                 </p>
                 <p>
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Lorem" name="user-email"/>
+                    <br />
+                    <select class="contact">
+                        <option>I have seen one of them</option>
+                    </select>
                 </p>
                 <p>
-                    <label for="msg">Message</label>
-                    <textarea type="text" id="msg" placeholder="Lorem" name="user-msg">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod accusamus harum vel, sequi doloremque incidunt distinctio earum mollitia quos tempore quisquam nesciunt totam ratione corrupti fugiat! Debitis, veniam! Ab, quas?
+                    <label for="msg"></label><br />
+                    <textarea class="contact" id="msg" placeholder="Your message" name="user-msg">
                     </textarea>
                 </p>
-                <p>
-                    <button type="submit">Envoyé</button>
-                </p>
+                <div>
+                    <button>Send !</button>
+                </div>
             </fieldset>
         </form>
+        <br />
         <footer>
-            monportfolio.com
-            <a href="Lorem" title="linkedin">linkedin</a>
+            <ul>
+                <li>About us</li>
+                <li>Fellows</li>
+                <li>Join our army</li>
+                <li>FAQ</li>
+                <li>Reward conditions</li>
+                <li>Legal mentions</li>
+                <li>Sauron4ever.com</li>
+                <li>Follow him</li>
+            </ul>
         </footer>
     </body>
 </html>
