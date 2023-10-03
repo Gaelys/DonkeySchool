@@ -53,7 +53,7 @@ h2 {
     text-align: center;
 }
 
-section div {
+div div {
     background-color: lightgray;
     height: 5em;
     margin: 1em;
@@ -133,7 +133,7 @@ footer ul{
         justify-content: center;
     }
 
-    section div {
+    div div {
         height: 20em;
         width: 100%;
     }
